@@ -11,7 +11,7 @@ void Adafruit_Sensor::printSensorDetails(void) {
   getSensor(&sensor);
   printf("------------------------------------\n");
   printf("Sensor:       ");
-  printf("%s\n",sensor.name);
+  printf("%*s\n",12,sensor.name);
   
   printf(("Type:         "));
   switch ((sensors_type_t)sensor.type) {
@@ -46,7 +46,7 @@ void Adafruit_Sensor::printSensorDetails(void) {
     printf("Rotation vector");
     break;
   case SENSOR_TYPE_RELATIVE_HUMIDITY:
-    printf("Relative Humidity (\%\)");
+    printf("Relative Humidity (%%)");
     break;
   case SENSOR_TYPE_AMBIENT_TEMPERATURE:
     printf("Ambient Temp (C)");
@@ -100,7 +100,7 @@ void Adafruit_Sensor::printSensorDetails(void) {
     printf("Gas Resistance (ohms)");
     break;
   case SENSOR_TYPE_UNITLESS_PERCENT:
-    printf("Unitless Percent (\%\)");
+    printf("Unitless Percent (%%)");
     break;
   case SENSOR_TYPE_ALTITUDE:
     printf("Altitude (m)");
