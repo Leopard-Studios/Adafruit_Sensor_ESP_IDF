@@ -1,0 +1,5 @@
+version: "1.1.15"
+author: Adafruit <info@adafruit.com>
+maintainer: Leopard-Studios <info@leopard-studios.co.uk>
+description: "A unified sensor abstraction layer used by many Adafruit sensor libraries. Ported for ESP-IDF"
+url: https://github.com/Leopard-Studios/Adafruit_Sensor_ESP_IDF
